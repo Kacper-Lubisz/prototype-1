@@ -10,7 +10,7 @@ interface LayoutVisualiserProps {
 
 interface LayoutVisualiserState {
   currentZone: Zone,
-  currentPlatform: Platform
+  currentPlatform: Platform,
   maxPlatformHeight: number,
   currentZoneIndex: number,
   currentPlatformIndex: number
@@ -62,13 +62,13 @@ export class LayoutVisualiser extends React.Component<LayoutVisualiserProps, Lay
         <h1>{this.state.currentPlatform.type} <Button onClick={() => {
           this.changeLocation(this.state.currentZoneIndex, this.state.currentPlatformIndex - 1)
         }}>{
-          this.state.currentPlatform.isLateral ? "←" : "↓"
+          "←"
         }</Button>
           {this.state.currentPlatform.toString()}
           <Button onClick={() => {
             this.changeLocation(this.state.currentZoneIndex, this.state.currentPlatformIndex + 1)
           }}>{
-            this.state.currentPlatform.isLateral ? "→" : "↑"
+            "→"
           }</Button>
         </h1>
         

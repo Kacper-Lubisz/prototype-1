@@ -9,7 +9,6 @@ export class Platform {
   stacks: Stack[];
   label: string;
   type: string;
-  isLateral: boolean;
   
   platformSpaceMatrix: mat4;
   
@@ -18,10 +17,9 @@ export class Platform {
   platformLeft?: Platform;
   platformRight?: Platform;
   
-  constructor(stacks: Stack[], label: string, type: string, isLateral: boolean, platformSpaceMatrix: mat4) {
+  constructor(stacks: Stack[], label: string, type: string, platformSpaceMatrix: mat4) {
     this.stacks = stacks;
     this.label = label;
-    this.isLateral = isLateral;
     this.type = type;
     
     this.platformSpaceMatrix = platformSpaceMatrix;

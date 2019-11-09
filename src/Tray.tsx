@@ -2,8 +2,8 @@ import {Stack} from "./Stack";
 import {mat4} from "gl-matrix";
 
 interface DateRange {
-  from: Date
-  to: Date
+  from: Date,
+  to: Date,
   label: string
 }
 
